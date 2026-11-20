@@ -1,0 +1,48 @@
+Seeds: 10
+
+A. Fairness check: peak RMSE (mm) and M1-log vs M1
+  Test 1 all                       M1 0.214  M1-log 0.221  M2 0.165  M3 0.189  M4B 0.179  M5 0.224  | M1-log vs M1 -3.8% [-15.0, +4.8] no clear difference
+  Test 2 all                       M1 0.409  M1-log 0.405  M2 0.369  M3 0.305  M4B 0.284  M5 0.424  | M1-log vs M1 +0.8% [-7.6, +7.0] no clear difference
+  Test 3 3A_known_10pct            M1 0.264  M1-log 0.285  M2 0.216  M3 0.214  M4B 0.204  M5 0.267  | M1-log vs M1 -10.8% [-31.7, +6.5] no clear difference
+  Test 3 3B_hidden_10pct           M1 0.673  M1-log 0.673  M2 0.673  M3 0.663  M4B 0.669  M5 0.674  | M1-log vs M1 +0.1% [-1.6, +1.7] no clear difference
+  Test 4 all 10%                   M1 0.574  M1-log 0.592  M2 0.384  M3 0.445  M4B 0.469  M5 0.556  | M1-log vs M1 -3.9% [-8.7, +1.1] no clear difference
+  Test 4 all 25%                   M1 0.347  M1-log 0.399  M2 0.285  M3 0.319  M4B 0.344  M5 0.360  | M1-log vs M1 -15.4% [-24.2, -8.8] clearly worse
+  Test 4 all 50%                   M1 0.244  M1-log 0.294  M2 0.217  M3 0.219  M4B 0.237  M5 0.250  | M1-log vs M1 -20.8% [-29.4, -13.4] clearly worse
+  Test 4 all 100%                  M1 0.214  M1-log 0.221  M2 0.165  M3 0.189  M4B 0.179  M5 0.224  | M1-log vs M1 -3.8% [-15.0, +4.8] no clear difference
+  Test 5 5A_near_resonance         M1 0.256  M1-log 0.272  M2 0.196  M3 0.215  M4B 0.210  M5 0.277  | M1-log vs M1 -7.3% [-22.8, +4.2] no clear difference
+  Test 5 5B_strong_nonlinearity    M1 0.315  M1-log 0.402  M2 0.260  M3 0.300  M4B 0.290  M5 0.363  | M1-log vs M1 -30.3% [-48.2, -22.4] clearly worse
+
+  Physics models vs M1-log (peak, mean improvement and verdict):
+  Test 1 all                       M2 +23.1% (clearly better)  M3 +12.6% (no clear difference)  M4B +17.0% (clearly better)  M5 -2.4% (no clear difference)
+  Test 2 all                       M2 +8.0% (no clear difference)  M3 +23.9% (clearly better)  M4B +29.3% (clearly better)  M5 -5.5% (no clear difference)
+  Test 3 3A_known_10pct            M2 +23.5% (clearly better)  M3 +24.0% (clearly better)  M4B +27.3% (clearly better)  M5 +4.6% (no clear difference)
+  Test 3 3B_hidden_10pct           M2 -0.0% (no clear difference)  M3 +1.4% (no clear difference)  M4B +0.6% (no clear difference)  M5 -0.2% (no clear difference)
+  Test 4 all 10%                   M2 +35.0% (clearly better)  M3 +24.7% (clearly better)  M4B +20.8% (clearly better)  M5 +6.0% (clearly better)
+  Test 4 all 25%                   M2 +27.7% (clearly better)  M3 +19.6% (clearly better)  M4B +13.3% (clearly better)  M5 +9.3% (clearly better)
+  Test 4 all 50%                   M2 +24.0% (clearly better)  M3 +23.9% (clearly better)  M4B +17.3% (clearly better)  M5 +13.9% (clearly better)
+  Test 4 all 100%                  M2 +23.1% (clearly better)  M3 +12.6% (no clear difference)  M4B +17.0% (clearly better)  M5 -2.4% (no clear difference)
+  Test 5 5A_near_resonance         M2 +27.6% (clearly better)  M3 +20.4% (clearly better)  M4B +22.6% (clearly better)  M5 -2.0% (no clear difference)
+  Test 5 5B_strong_nonlinearity    M2 +34.7% (clearly better)  M3 +24.6% (clearly better)  M4B +27.8% (clearly better)  M5 +9.2% (no clear difference)
+
+  Physically implausible predictions on Test 1 (% of cases, mean over seeds):
+  M1      3.77%  (negative peak 1.72%, RMS above peak 2.88%)
+  M2      2.40%  (negative peak 0.93%, RMS above peak 1.42%)
+  M3      3.08%  (negative peak 1.24%, RMS above peak 2.62%)
+  M4B     2.93%  (negative peak 0.73%, RMS above peak 2.32%)
+  M5      5.05%  (negative peak 2.58%, RMS above peak 4.29%)
+  M1-log  0.00%  (negative peak 0.00%, RMS above peak 0.00%)
+
+B. Framework test (peak RMSE improvement vs M1)
+  Standard test set (Test 4), 10% data: M1 0.574 mm; M2 +32.4% [+25.1, +39.4]  M3 +21.8% [+15.9, +28.2]  M4B +17.8% [+12.5, +23.3]  M5 +2.9% [+1.9, +4.1]
+  Standard test set (Test 4), 100% data: M1 0.214 mm; M2 +21.7% [+11.1, +34.2]  M3 +10.7% [-1.3, +24.3]  M4B +15.0% [+5.1, +24.8]  M5 -5.2% [-11.2, -0.6]
+  Test 2 unseen geometry, 10% data: M1 0.673 mm; M2 +28.2% [+17.9, +38.1]  M3 +26.2% [+20.7, +31.6]  M4B +20.2% [+14.8, +25.1]  M5 +0.5% [-1.0, +1.8]
+  Test 2 unseen geometry, 100% data: M1 0.409 mm; M2 +9.5% [-10.8, +30.7]  M3 +24.8% [+9.3, +37.1]  M4B +30.0% [+16.8, +39.6]  M5 -4.0% [-6.9, -1.8]
+  Test 3A known ±10%, 10% data: M1 0.676 mm; M2 +31.4% [+23.2, +40.6]  M3 +25.0% [+18.4, +32.0]  M4B +18.9% [+13.8, +24.0]  M5 +1.6% [+0.2, +3.0]
+  Test 3A known ±10%, 100% data: M1 0.264 mm; M2 +15.5% [-3.1, +35.8]  M3 +18.1% [+2.5, +31.5]  M4B +21.2% [+6.2, +33.3]  M5 -1.8% [-8.9, +2.8]
+  Test 3B hidden ±10%, 10% data: M1 0.669 mm; M2 +4.5% [-1.9, +10.6]  M3 +1.9% [-4.0, +8.0]  M4B +0.2% [-5.4, +5.7]  M5 +1.1% [-0.0, +2.1]
+  Test 3B hidden ±10%, 100% data: M1 0.673 mm; M2 +0.1% [-1.3, +1.4]  M3 +1.5% [-0.3, +3.3]  M4B +0.7% [-1.1, +2.4]  M5 -0.1% [-1.3, +1.0]
+
+Predictions in analysis/framework_prediction.txt (Written: 2026-11-18 12:29 UTC (2026-11-18 23:29 AEDT)):
+  P1 HELD: M2 improvement at 10% data is +32.4% on the standard test set and +4.5% under hidden ±10% uncertainty.
+  P2 HELD: largest lower 95% bound among physics models under hidden ±10% at 10% data is -0.0%.
+  P3 HELD: largest change in Test 3B error between 100% and 10% data across models is 5.1%.

@@ -1,0 +1,201 @@
+{
+  "simulator": "beam_model/nonlinear_beam.py",
+  "simulator_sha256": "2aa043e37cee1f767c3e40c5cbeb68b32d9450e954b811bccf2c6a149be0adf6",
+  "extended": false,
+  "checks": [
+    {
+      "name": "Rotary-inertia frequency vs analytical",
+      "measured": 1.5296906042254786e-14,
+      "acceptance_limit": 1e-08,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Exact unforced linear modal response",
+      "measured": 3.4309257569849726e-14,
+      "acceptance_limit": 5e-09,
+      "units": "m",
+      "passed": true
+    },
+    {
+      "name": "Undamped/unforced nonlinear energy drift",
+      "measured": 8.635724591859703e-08,
+      "acceptance_limit": 0.002,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Small-load nonlinear vs linear peak",
+      "measured": 0.0016688933968552204,
+      "acceptance_limit": 0.1,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Independent RK4 vs DOP853 displacement",
+      "measured": 7.89868658949503e-09,
+      "acceptance_limit": 0.02,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Seven-mode peak convergence near mode 1",
+      "measured": 0.00010609002239502584,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Seven-mode RMS convergence near mode 1",
+      "measured": 0.00010504773377031026,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Seven-mode peak convergence near mode 3",
+      "measured": 0.010443896426118615,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Seven-mode RMS convergence near mode 3",
+      "measured": 0.0034085959050327618,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Seven-mode peak convergence near mode 5",
+      "measured": 0.034098341072623356,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Seven-mode RMS convergence near mode 5",
+      "measured": 0.005458693796484795,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Peak sensitivity, near-first-mode",
+      "measured": 3.1975934863203275e-09,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "RMS sensitivity, near-first-mode",
+      "measured": 0.035840172182123056,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Peak sensitivity, above-first-mode",
+      "measured": 0.08655964218535496,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "RMS sensitivity, above-first-mode",
+      "measured": 0.002384277391449762,
+      "acceptance_limit": 1.0,
+      "units": "%",
+      "passed": true
+    },
+    {
+      "name": "Published modal reconstruction Eq. (42)",
+      "measured": 2.986547897876335e-09,
+      "acceptance_limit": 1e-08,
+      "units": "absolute",
+      "passed": true
+    },
+    {
+      "name": "SI/nondim modal acceleration (three states)",
+      "measured": 7.275957614183426e-12,
+      "acceptance_limit": 1e-08,
+      "units": "nondimensional absolute",
+      "passed": true
+    },
+    {
+      "name": "SI/nondim time-grid correspondence",
+      "measured": 1.3877787807814457e-17,
+      "acceptance_limit": 1e-12,
+      "units": "nondim absolute",
+      "passed": true
+    },
+    {
+      "name": "SI/nondim seven-modal history agreement",
+      "measured": 6.867839630331218e-13,
+      "acceptance_limit": 2e-05,
+      "units": "nondim absolute",
+      "passed": true
+    },
+    {
+      "name": "SI/nondim observation history agreement",
+      "measured": 6.228906279659441e-13,
+      "acceptance_limit": 2e-05,
+      "units": "nondim absolute",
+      "passed": true
+    }
+  ],
+  "notes": {
+    "Simulator file": "beam_model/nonlinear_beam.py",
+    "Simulator SHA256": "2aa043e37cee1f767c3e40c5cbeb68b32d9450e954b811bccf2c6a149be0adf6",
+    "Version": "Unmodified original simulator: no new keywords required",
+    "Classical E-B vs rotary-inertia frequency difference (expected)": "0.0503381%",
+    "Seven natural frequencies (Hz)": [
+      5.807157160713787,
+      23.227912261429097,
+      52.260116489238904,
+      92.90018959355065,
+      145.1431215413531,
+      208.9824748323675,
+      284.4103874718655
+    ],
+    "Nonlinear vs linear peak at 15 Pa (descriptive)": "29.7387%",
+    "modal_comparison": [
+      {
+        "target_mode": 1,
+        "excitation_hz": 5.5167993026780975,
+        "peak_7": 0.0017705017182838734,
+        "peak_9": 0.0017705003440222763,
+        "peak_11": 0.0017704998399601967,
+        "rms_7": 0.00119283638850519,
+        "rms_9": 0.0011928354716771584,
+        "rms_11": 0.0011928351354589125
+      },
+      {
+        "target_mode": 3,
+        "excitation_hz": 49.64711066477695,
+        "peak_7": 1.861701512790324e-05,
+        "peak_9": 1.8618442742663383e-05,
+        "peak_11": 1.8618959672767086e-05,
+        "rms_7": 1.0219907589711639e-05,
+        "rms_9": 1.022016288057626e-05,
+        "rms_11": 1.022025595693767e-05
+      },
+      {
+        "target_mode": 5,
+        "excitation_hz": 137.88596546428545,
+        "peak_7": 6.077356822372336e-06,
+        "peak_9": 6.0788937605997855e-06,
+        "peak_11": 6.079429807083226e-06,
+        "rms_7": 3.547077596297387e-06,
+        "rms_9": 3.5472211662186345e-06,
+        "rms_11": 3.5472712309720164e-06
+      }
+    ],
+    "Base-paper long-time benchmark": "NOT ATTEMPTED: excluded by thesis decision; no claim of reproduced long-time chaotic maxima",
+    "Base-paper short-time comparison window": "nondimensional t=[0,0.08], with 1001 saved points",
+    "Published long-time replication": "NOT CLAIMED",
+    "Numerical verification verdict": "20/20 checks passed for selected verification conditions"
+  },
+  "all_checks_passed": true,
+  "scope": "verified numerical implementation under specified test conditions; not experimental validation or long-time paper reproduction"
+}

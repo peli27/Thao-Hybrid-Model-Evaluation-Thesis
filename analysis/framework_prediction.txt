@@ -1,0 +1,13 @@
+Framework prediction, written before running the combined test.
+Written: 2026-11-18 12:29 UTC (2026-11-18 23:29 AEDT)
+Source: thesis Table 12 ("Limited training data" and "Hidden or inaccurate parameters" rows) and Section 7.3.3 worked example.
+
+Combined condition: models trained on 10% of the training data, evaluated on Test 3B (hidden ±10% property changes).
+
+P1. Model 2 (physics-guided features) was the most data-efficient model (+27.2% peak RMSE improvement at 10% data on the
+    standard test set). The framework predicts that under hidden ±10% uncertainty this advantage largely disappears:
+    Model 2's mean improvement over Model 1 will be less than half of its standard 10%-data improvement.
+P2. Under hidden uncertainty, no physics-integration strategy is reliably preferred: no model will be
+    "clearly better" than Model 1 by more than 5% (lower end of the 95% range above +5%).
+P3. Data scarcity and hidden uncertainty do not add up: the 10%-data models' Test 3B errors will be close to the
+    100%-data models' Test 3B errors (within 20%), because missing structural information dominates.

@@ -1,0 +1,29 @@
+{
+  "seed": 20261019,
+  "n": 200,
+  "settings": {
+    "b": 0.04,
+    "t_end": 10.0,
+    "dt": 0.002,
+    "rtol": 1e-08,
+    "atol": 1e-10
+  },
+  "solver": "DOP853",
+  "initial_conditions": "zero",
+  "response": "x/L=0.65; peak abs and sampled RMS over t=5..10 s inclusive",
+  "selection": "40 low forcing <=3 Pa; 30 below; 30 above; 50 near; 50 strong eta>=0.1 (25 upper quartile)",
+  "sampling_caution": "Purposive regime-balanced diagnostic, not a population-weighted test set; strong selection uses reference outputs.",
+  "source_hashes": {
+    "data/main/nonlinear_beam_dataset.csv": "0c4943eda90ba783492723f73b9a0eb04a413a0ffd86b2fdc257afa7595b9acf",
+    "data/test_datasets/difficult_response_dataset.csv": "a08a87672bf1a6bb99654c1330a9178dc7b965bf0c048fece9eb1d9a7c667dbe"
+  },
+  "protected_artifacts_unchanged": true,
+  "protected_file_count": 589,
+  "python": "3.10.18 (main, Jun  5 2025, 08:13:51) [Clang 14.0.6 ]",
+  "platform": "macOS-10.16-x86_64-i386-64bit",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "pandas": "2.3.1",
+  "linear_batch_median_seconds": 0.00012062500172760338,
+  "paired_median_speedup": 5.369932589603534
+}

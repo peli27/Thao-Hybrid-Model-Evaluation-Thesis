@@ -1,0 +1,2 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample,timing_scope
+Residual-Learning Hybrid,cpu,1,500,10,0.0013248539999040077,2.6497079998080153e-06,All 500 cases; the strong subset reuses these predictions

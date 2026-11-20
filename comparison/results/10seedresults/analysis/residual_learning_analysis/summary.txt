@@ -1,0 +1,23 @@
+Seeds: 10
+Linear estimate / reference (peak), all 5,000 cases:
+  0.50 <= r < 0.85: median 0.96, 95th percentile 1.0, max 1.4  (n=1000)
+  0.85 <= r < 0.95: median 1.01, 95th percentile 1.6, max 2.3  (n=859)
+  0.95 <= r < 1.05: median 1.52, 95th percentile 5.1, max 16.4  (n=861)
+  1.05 <= r < 1.20: median 0.85, 95th percentile 1.0, max 1.9  (n=1280)
+  1.20 <= r < 1.50: median 0.88, 95th percentile 1.0, max 1.0  (n=1000)
+
+Target difficulty (training set):
+  Reference peak (Model 1 target)    all training cases   SD 1.056 mm, 99th pct |y| 4.310 mm, max |y| 5.424 mm, nearest-neighbour change 0.656 mm
+  Reference peak (Model 1 target)    0.95 <= r <= 1.05    SD 0.839 mm, 99th pct |y| 3.389 mm, max |y| 3.764 mm, nearest-neighbour change 0.544 mm
+  Residual peak (Model 4A target)    all training cases   SD 2.265 mm, 99th pct |y| 9.607 mm, max |y| 45.846 mm, nearest-neighbour change 1.120 mm
+  Residual peak (Model 4A target)    0.95 <= r <= 1.05    SD 4.671 mm, 99th pct |y| 20.684 mm, max |y| 45.846 mm, nearest-neighbour change 2.167 mm
+
+Peak RMSE (mm), mean ± SD over seeds:
+  test (Test 1)  above_resonance  M4A 0.283 ± 0.111  M4B 0.080 ± 0.026
+  test (Test 1)  all              M4A 1.218 ± 0.166  M4B 0.179 ± 0.016
+  test (Test 1)  below_resonance  M4A 0.135 ± 0.031  M4B 0.040 ± 0.014
+  test (Test 1)  near_resonance   M4A 1.560 ± 0.214  M4B 0.225 ± 0.020
+  validation     above_resonance  M4A 0.275 ± 0.052  M4B 0.184 ± 0.041
+  validation     all              M4A 0.713 ± 0.066  M4B 0.138 ± 0.022
+  validation     below_resonance  M4A 0.136 ± 0.029  M4B 0.036 ± 0.013
+  validation     near_resonance   M4A 0.902 ± 0.084  M4B 0.141 ± 0.021

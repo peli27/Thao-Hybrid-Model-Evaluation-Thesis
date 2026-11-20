@@ -1,0 +1,8 @@
+model,test_case,uncertainty_level_percent,median_batch_seconds,device,torch_threads,n_samples,timing_repeats,amortised_seconds_per_sample,timing_note
+Residual-Learning Hybrid,Nominal reference,0.0,0.0012952500001119915,cpu,1,500,10,2.590500000223983e-06,Measured independently on this input batch
+Residual-Learning Hybrid,3A Known perturbation,2.5,0.001209937499879743,cpu,1,500,10,2.419874999759486e-06,Measured independently on this input batch
+Residual-Learning Hybrid,3B Unknown perturbation,2.5,0.0012952500001119915,cpu,1,500,10,2.590500000223983e-06,Reused timing of identical nominal-reference inputs
+Residual-Learning Hybrid,3A Known perturbation,5.0,0.0013678960003744578,cpu,1,500,10,2.7357920007489155e-06,Measured independently on this input batch
+Residual-Learning Hybrid,3B Unknown perturbation,5.0,0.0012952500001119915,cpu,1,500,10,2.590500000223983e-06,Reused timing of identical nominal-reference inputs
+Residual-Learning Hybrid,3A Known perturbation,10.0,0.001329645499936305,cpu,1,500,10,2.65929099987261e-06,Measured independently on this input batch
+Residual-Learning Hybrid,3B Unknown perturbation,10.0,0.0012952500001119915,cpu,1,500,10,2.590500000223983e-06,Reused timing of identical nominal-reference inputs

@@ -1,0 +1,62 @@
+Peak displacement in the Test 1 set: mean 1.036 mm, range 0.003 to 5.628 mm.
+Seeds used: 10.
+
+Peak-displacement improvement vs Model 1 (mean over seeds, 95% bootstrap range, seeds better):
+  Test 1 all                             M2    +21.7%  [ +11.1,  +34.2]  9/10  clearly better
+  Test 1 all                             M3    +10.7%  [  -1.3,  +24.3]  7/10  no clear difference
+  Test 1 all                             M4B   +15.0%  [  +5.1,  +24.8]  8/10  clearly better
+  Test 1 all                             M5     -5.2%  [ -11.2,   -0.6]  2/10  clearly worse
+  Test 2 all                             M2     +9.5%  [ -10.8,  +30.7]  9/10  no clear difference
+  Test 2 all                             M3    +24.8%  [  +9.3,  +37.1]  10/10  clearly better
+  Test 2 all                             M4B   +30.0%  [ +16.8,  +39.6]  10/10  clearly better
+  Test 2 all                             M5     -4.0%  [  -6.9,   -1.8]  2/10  clearly worse
+  Test 3 3A_known_10pct                  M2    +15.5%  [  -3.1,  +35.8]  9/10  no clear difference
+  Test 3 3A_known_10pct                  M3    +18.1%  [  +2.5,  +31.5]  10/10  clearly better
+  Test 3 3A_known_10pct                  M4B   +21.2%  [  +6.2,  +33.3]  10/10  clearly better
+  Test 3 3A_known_10pct                  M5     -1.8%  [  -8.9,   +2.8]  3/10  no clear difference
+  Test 3 3B_hidden_10pct                 M2     +0.1%  [  -1.3,   +1.4]  5/10  no clear difference
+  Test 3 3B_hidden_10pct                 M3     +1.5%  [  -0.3,   +3.3]  9/10  no clear difference
+  Test 3 3B_hidden_10pct                 M4B    +0.7%  [  -1.1,   +2.4]  6/10  no clear difference
+  Test 3 3B_hidden_10pct                 M5     -0.1%  [  -1.3,   +1.0]  5/10  no clear difference
+  Test 4 all 10% data                    M2    +32.4%  [ +25.1,  +39.4]  10/10  clearly better
+  Test 4 all 10% data                    M3    +21.8%  [ +15.9,  +28.2]  10/10  clearly better
+  Test 4 all 10% data                    M4B   +17.8%  [ +12.5,  +23.3]  10/10  clearly better
+  Test 4 all 10% data                    M5     +2.9%  [  +1.9,   +4.1]  6/10  clearly better
+  Test 4 all 25% data                    M2    +17.2%  [ +12.1,  +23.2]  9/10  clearly better
+  Test 4 all 25% data                    M3     +7.5%  [  -0.7,  +15.9]  8/10  no clear difference
+  Test 4 all 25% data                    M4B    -0.1%  [  -8.5,   +7.3]  4/10  no clear difference
+  Test 4 all 25% data                    M5     -4.1%  [  -6.7,   -1.6]  2/10  clearly worse
+  Test 4 all 50% data                    M2    +10.1%  [  -2.6,  +23.0]  7/10  no clear difference
+  Test 4 all 50% data                    M3     +9.4%  [  -2.4,  +20.1]  7/10  no clear difference
+  Test 4 all 50% data                    M4B    +1.8%  [ -10.1,  +11.8]  4/10  no clear difference
+  Test 4 all 50% data                    M5     -2.5%  [  -6.4,   +0.1]  4/10  no clear difference
+  Test 4 all 100% data                   M2    +21.7%  [ +11.1,  +34.2]  9/10  clearly better
+  Test 4 all 100% data                   M3    +10.7%  [  -1.3,  +24.3]  7/10  no clear difference
+  Test 4 all 100% data                   M4B   +15.0%  [  +5.1,  +24.8]  8/10  clearly better
+  Test 4 all 100% data                   M5     -5.2%  [ -11.2,   -0.6]  2/10  clearly worse
+  Test 5 5A_near_resonance               M2    +22.9%  [ +14.2,  +32.8]  10/10  clearly better
+  Test 5 5A_near_resonance               M3    +15.4%  [  +4.9,  +23.5]  9/10  clearly better
+  Test 5 5A_near_resonance               M4B   +17.8%  [  +8.1,  +26.2]  10/10  clearly better
+  Test 5 5A_near_resonance               M5     -8.5%  [ -17.2,   -3.4]  2/10  clearly worse
+  Test 5 5B_strong_nonlinearity          M2    +15.5%  [  +3.3,  +29.2]  8/10  clearly better
+  Test 5 5B_strong_nonlinearity          M3     +3.2%  [ -10.9,  +12.0]  6/10  no clear difference
+  Test 5 5B_strong_nonlinearity          M4B    +7.1%  [  -5.7,  +16.3]  6/10  no clear difference
+  Test 5 5B_strong_nonlinearity          M5    -16.8%  [ -29.0,  -10.5]  1/10  clearly worse
+
+Test 3B: perfect nominal model vs Model 1 (peak RMSE, mm):
+  ±2.5%: perfect nominal model 0.258, M1 0.242, M4B 0.228; mean |frequency-ratio shift| 0.015
+  ±5%: perfect nominal model 0.467, M1 0.433, M4B 0.432; mean |frequency-ratio shift| 0.030
+  ±10%: perfect nominal model 0.703, M1 0.673, M4B 0.669; mean |frequency-ratio shift| 0.060
+
+Test 5 linear-estimate peak RMSE (mm) vs model RMSE:
+  5A all near-resonance    estimate 3.287  M1 0.256  M4B 0.210  (n=500)
+  5B strongly nonlinear    estimate 5.389  M1 0.315  M4B 0.290  (n=185)
+  5A outside 5B            estimate 0.313  M1 0.211  M4B 0.143  (n=315)
+
+Cost: seven-mode simulation 3.179 s per case; surrogates:
+  M1   0.795 ms per query, 3,999x faster, training 15.8 s
+  M2   0.780 ms per query, 4,074x faster, training 19.2 s
+  M3   0.779 ms per query, 4,079x faster, training 13.9 s
+  M4B  0.784 ms per query, 4,055x faster, training 20.8 s
+  M5   0.773 ms per query, 4,112x faster, training 18.5 s
+  Dataset generation estimate: 4.4 h (main), 6.6 h (all datasets), single CPU process

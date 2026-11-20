@@ -1,0 +1,11 @@
+item,single_query_ms,speedup_vs_7mode_simulation,training_seconds_mean_100pct,n_training_runs,estimate_hours
+Model 1 Baseline,0.7950420040288009,3999.0220968035424,15.800343141698978,10.0,
+Model 2 Physics-Guided,0.7804584965924732,4073.7471061940487,19.184145437598637,10.0,
+Model 3 Physics-Estimate,0.779415997385513,4079.195901371219,13.881516912503866,10.0,
+Model 4B Residual,0.7840414982638322,4055.130435109025,20.824520145799035,10.0,
+Model 5 Physics-Regularised,0.7731249934295192,4112.388771568009,18.495663470706496,10.0,
+"Seven-mode reference simulation (median, 30 cases)",3179.3905419981456,,,,
+"Nonlinear one-mode simulation (median, 30 cases)",531.534270998236,,,,
+"Linear analytical estimate (amortised, vectorised)",0.0006031250086380169,,,,
+"Main dataset generation estimate (5,000 x seven-mode median), hours",,,,,4.415820197219647
+"All datasets incl. Tests 2, 3, 5 (7,500 simulations), hours",,,,,6.62373029582947

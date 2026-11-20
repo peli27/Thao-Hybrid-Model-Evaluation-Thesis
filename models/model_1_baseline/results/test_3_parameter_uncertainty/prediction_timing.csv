@@ -1,0 +1,8 @@
+model,test_case,uncertainty_level_percent,median_batch_seconds,device,torch_threads,n_samples,timing_repeats,amortised_seconds_per_sample,timing_note
+Baseline MLP,Nominal reference,0.0,0.0010564369986241218,cpu,1,500,10,2.1128739972482435e-06,Measured independently on this input batch
+Baseline MLP,3A Known perturbation,2.5,0.0010261669976898702,cpu,1,500,10,2.0523339953797405e-06,Measured independently on this input batch
+Baseline MLP,3B Unknown perturbation,2.5,0.0010564369986241218,cpu,1,500,10,2.1128739972482435e-06,Reused timing of identical nominal-reference inputs
+Baseline MLP,3A Known perturbation,5.0,0.001146624998000334,cpu,1,500,10,2.293249996000668e-06,Measured independently on this input batch
+Baseline MLP,3B Unknown perturbation,5.0,0.0010564369986241218,cpu,1,500,10,2.1128739972482435e-06,Reused timing of identical nominal-reference inputs
+Baseline MLP,3A Known perturbation,10.0,0.0010752294983831234,cpu,1,500,10,2.1504589967662467e-06,Measured independently on this input batch
+Baseline MLP,3B Unknown perturbation,10.0,0.0010564369986241218,cpu,1,500,10,2.1128739972482435e-06,Reused timing of identical nominal-reference inputs

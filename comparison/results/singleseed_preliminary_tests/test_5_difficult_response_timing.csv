@@ -1,0 +1,6 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample,timing_scope
+Baseline MLP,cpu,1,500,10,0.001061020999259199,2.122041998518398e-06,All 500 cases; the strong subset reuses these predictions
+Physics-Guided NN,cpu,1,500,10,0.0012994164990232093,2.5988329980464187e-06,All 500 cases; the strong subset reuses these predictions
+Physics-Estimate Hybrid,cpu,1,500,10,0.0013081669985695044,2.6163339971390085e-06,All 500 cases; the strong subset reuses these predictions
+Residual-Learning Hybrid,cpu,1,500,10,0.0013248539999040077,2.6497079998080153e-06,All 500 cases; the strong subset reuses these predictions
+Physics-Regularised NN,cpu,1,500,10,0.0010294584990333533,2.0589169980667067e-06,All 500 cases; the strong subset reuses these predictions

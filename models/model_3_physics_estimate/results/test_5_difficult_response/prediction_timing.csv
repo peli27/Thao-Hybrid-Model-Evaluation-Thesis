@@ -1,0 +1,2 @@
+model,device,torch_threads,n_samples,timing_repeats,median_batch_seconds,amortised_seconds_per_sample,timing_scope
+Physics-Estimate Hybrid,cpu,1,500,10,0.0013081669985695044,2.6163339971390085e-06,All 500 cases; the strong subset reuses these predictions

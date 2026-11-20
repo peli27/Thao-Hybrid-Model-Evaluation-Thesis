@@ -1,0 +1,70 @@
+Trained physics_guided, 25%, seed 4, best epoch 199
+Trained physics_guided, 25%, seed 5, best epoch 448
+Trained physics_guided, 25%, seed 6, best epoch 393
+Trained physics_guided, 25%, seed 7, best epoch 230
+Trained physics_estimate, 25%, seed 1, best epoch 322
+Trained physics_estimate, 25%, seed 2, best epoch 228
+Trained physics_estimate, 25%, seed 3, best epoch 407
+Trained physics_estimate, 25%, seed 4, best epoch 395
+Trained physics_estimate, 25%, seed 5, best epoch 232
+Trained physics_estimate, 25%, seed 6, best epoch 296
+Trained physics_estimate, 25%, seed 7, best epoch 309
+Trained residual, 25%, seed 1, best epoch 431
+Trained residual, 25%, seed 2, best epoch 250
+Trained residual, 25%, seed 3, best epoch 228
+Trained residual, 25%, seed 4, best epoch 323
+Trained residual, 25%, seed 5, best epoch 457
+Trained residual, 25%, seed 6, best epoch 425
+Trained residual, 25%, seed 7, best epoch 321
+Trained physics_regularised, 25%, seed 1, best epoch 395
+Trained physics_regularised, 25%, seed 2, best epoch 148
+Trained physics_regularised, 25%, seed 3, best epoch 493
+Trained physics_regularised, 25%, seed 4, best epoch 343
+Trained physics_regularised, 25%, seed 5, best epoch 175
+Trained physics_regularised, 25%, seed 6, best epoch 437
+Trained physics_regularised, 25%, seed 7, best epoch 173
+Trained baseline, 10%, seed 1, best epoch 476
+Trained baseline, 10%, seed 2, best epoch 248
+Trained baseline, 10%, seed 3, best epoch 140
+Trained baseline, 10%, seed 4, best epoch 186
+Trained baseline, 10%, seed 5, best epoch 104
+Trained baseline, 10%, seed 6, best epoch 162
+Trained baseline, 10%, seed 7, best epoch 175
+Trained physics_guided, 10%, seed 1, best epoch 196
+Trained physics_guided, 10%, seed 2, best epoch 318
+Trained physics_guided, 10%, seed 3, best epoch 384
+Trained physics_guided, 10%, seed 4, best epoch 255
+Trained physics_guided, 10%, seed 5, best epoch 293
+Trained physics_guided, 10%, seed 6, best epoch 299
+Trained physics_guided, 10%, seed 7, best epoch 137
+Trained physics_estimate, 10%, seed 1, best epoch 403
+Trained physics_estimate, 10%, seed 2, best epoch 366
+Trained physics_estimate, 10%, seed 3, best epoch 418
+Trained physics_estimate, 10%, seed 4, best epoch 333
+Trained physics_estimate, 10%, seed 5, best epoch 239
+Trained physics_estimate, 10%, seed 6, best epoch 297
+Trained physics_estimate, 10%, seed 7, best epoch 475
+Trained residual, 10%, seed 1, best epoch 327
+Trained residual, 10%, seed 2, best epoch 385
+Trained residual, 10%, seed 3, best epoch 262
+Trained residual, 10%, seed 4, best epoch 378
+Trained residual, 10%, seed 5, best epoch 164
+Trained residual, 10%, seed 6, best epoch 247
+Trained residual, 10%, seed 7, best epoch 212
+Trained physics_regularised, 10%, seed 1, best epoch 207
+Trained physics_regularised, 10%, seed 2, best epoch 173
+Trained physics_regularised, 10%, seed 3, best epoch 116
+Trained physics_regularised, 10%, seed 4, best epoch 190
+Trained physics_regularised, 10%, seed 5, best epoch 482
+Trained physics_regularised, 10%, seed 6, best epoch 133
+Trained physics_regularised, 10%, seed 7, best epoch 489
+Test 4 complete: ../comparison/results/10seedresults/test_4/comparison_summary.csv
+Test 4: 150200 prediction rows, 1200 metric rows, unmatched 0, max relative RMSE difference 6.88e-07
+Test 1 complete: ../comparison/results/10seedresults/test_1/comparison_summary.csv
+Test 1: 37550 prediction rows, 1200 metric rows, unmatched 0, max relative RMSE difference 1.91e-06
+Test 2 complete: ../comparison/results/10seedresults/test_2/comparison_summary.csv
+Test 2: 25000 prediction rows, 900 metric rows, unmatched 0, max relative RMSE difference 6.93e-07
+Test 3 complete: ../comparison/results/10seedresults/test_3/comparison_summary.csv
+Test 3: 150000 prediction rows, 1800 metric rows, unmatched 0, max relative RMSE difference 6.12e-07
+Test 5 complete: ../comparison/results/10seedresults/test_5/comparison_summary.csv
+Test 5: 25000 prediction rows, 600 metric rows, unmatched 0, max relative RMSE difference 9.58e-07

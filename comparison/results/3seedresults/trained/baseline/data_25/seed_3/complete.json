@@ -1,0 +1,7 @@
+{
+  "seed": 3,
+  "percentage": 25,
+  "n_train": 874,
+  "best_epoch": 282,
+  "training_seconds": 16.35070712499146
+}

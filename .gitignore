@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+__MACOSX/
+._*
+
+# VS Code
+.vscode/
+
+# Matplotlib
+.mplconfig/
